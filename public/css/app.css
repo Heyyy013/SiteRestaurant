@@ -11896,4 +11896,21 @@ section:nth-of-type(2) div {
   margin-top: 300px;
 }
 
+section:nth-of-type(3) {
+  background-color: #0D0B09;
+  color: white;
+  padding-left: 75px;
+}
+section:nth-of-type(3) h1, section:nth-of-type(3) .h1 {
+  color: #CDA45D;
+}
+section:nth-of-type(3) .d-flex {
+  width: 100%;
+}
+section:nth-of-type(3) .d-flex div {
+  background-color: #1A1814;
+  width: 30%;
+  padding: 30px;
+}
+
 /*# sourceMappingURL=app.css.map */
