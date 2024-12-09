@@ -12,7 +12,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-orange: #CDA45D;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -11848,8 +11848,9 @@ textarea.form-control-lg {
 section:nth-of-type(1) {
   background-image: url("../img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
+  background-size: 100%;
   width: 100%;
-  height: 400px;
+  height: 700px;
 }
 section:nth-of-type(1) nav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -11857,9 +11858,42 @@ section:nth-of-type(1) nav {
 section:nth-of-type(1) nav p {
   color: white;
 }
+section:nth-of-type(1) nav p:hover {
+  color: #CDA45D;
+}
 section:nth-of-type(1) nav button {
   color: white;
   width: 40%;
+  border-color: #CDA45D;
+}
+section:nth-of-type(1) .welcome {
+  margin-top: 250px;
+  margin-left: 100px;
+}
+section:nth-of-type(1) .welcome span {
+  color: yellow;
+}
+section:nth-of-type(1) .welcome button {
+  margin-top: 20px;
+  color: white;
+  border-color: #CDA45D;
+  width: 12%;
+}
+
+section:nth-of-type(2) {
+  background-image: url("../img/about-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: overlay;
+  background-size: 100%;
+  width: 100%;
+  height: 1000px;
+  color: white;
+}
+section:nth-of-type(2) img {
+  width: 75%;
+}
+section:nth-of-type(2) div {
+  width: 40%;
+  margin-top: 300px;
 }
 
 /*# sourceMappingURL=app.css.map */
