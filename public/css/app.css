@@ -11896,7 +11896,7 @@ section:nth-of-type(1) .welcome button {
 }
 section:nth-of-type(1) .welcome button:hover {
   background-color: #CDA45D;
-  border-color: #CDA45D b;
+  border-color: #CDA45D;
 }
 
 section:nth-of-type(2) {
@@ -11981,6 +11981,43 @@ section:nth-of-type(5) img {
 section:nth-of-type(5) .carousel {
   width: 80%;
   margin: auto;
+}
+
+section:nth-of-type(6) {
+  background-color: #0D0B09;
+  color: white;
+  padding-left: 75px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+section:nth-of-type(6) .d-flex {
+  width: 80%;
+  margin: auto;
+}
+section:nth-of-type(6) .d-flex input {
+  width: 25%;
+  height: 40px;
+  background-color: black;
+  border: solid 1px #CDA45D;
+  color: #CDA45D;
+}
+section:nth-of-type(6) textarea {
+  width: 80%;
+  height: 100px;
+  background-color: black;
+  border: solid 1px #CDA45D;
+  color: #CDA45D;
+}
+section:nth-of-type(6) button {
+  margin-top: 20px;
+  color: white;
+  border-color: #CDA45D;
+  width: 12%;
+  background-color: #CDA45D;
+}
+section:nth-of-type(6) button:hover {
+  color: white;
+  background-color: #CDA45D;
 }
 
 /*# sourceMappingURL=app.css.map */
