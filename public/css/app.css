@@ -11855,6 +11855,12 @@ section:nth-of-type(1) {
 section:nth-of-type(1) nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
+section:nth-of-type(1) nav h3, section:nth-of-type(1) nav .h3 {
+  color: white;
+}
+section:nth-of-type(1) nav h3:hover, section:nth-of-type(1) nav .h3:hover {
+  color: white;
+}
 section:nth-of-type(1) nav p {
   color: white;
 }
@@ -11866,18 +11872,26 @@ section:nth-of-type(1) nav button {
   width: 40%;
   border-color: #CDA45D;
 }
+section:nth-of-type(1) nav button:hover {
+  background-color: #CDA45D;
+  border-color: #CDA45D;
+}
 section:nth-of-type(1) .welcome {
   margin-top: 250px;
   margin-left: 100px;
 }
 section:nth-of-type(1) .welcome span {
-  color: yellow;
+  color: #CDA45D;
 }
 section:nth-of-type(1) .welcome button {
   margin-top: 20px;
   color: white;
   border-color: #CDA45D;
   width: 12%;
+}
+section:nth-of-type(1) .welcome button:hover {
+  background-color: #CDA45D;
+  border-color: #CDA45D;
 }
 
 section:nth-of-type(2) {
@@ -11900,6 +11914,7 @@ section:nth-of-type(3) {
   background-color: #0D0B09;
   color: white;
   padding-left: 75px;
+  padding-bottom: 50px;
 }
 section:nth-of-type(3) h1, section:nth-of-type(3) .h1 {
   color: #CDA45D;
@@ -11911,6 +11926,29 @@ section:nth-of-type(3) .d-flex div {
   background-color: #1A1814;
   width: 30%;
   padding: 30px;
+}
+
+section:nth-of-type(4) {
+  background-color: #1A1814;
+  color: white;
+  padding-left: 75px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+section:nth-of-type(4) h1, section:nth-of-type(4) .h1 {
+  color: #CDA45D;
+}
+section:nth-of-type(4) .d-flex:nth-of-type(2) {
+  width: 80%;
+  padding-top: 50px;
+}
+section:nth-of-type(4) .d-flex:nth-of-type(2) div {
+  background-color: #1A1814;
+  color: white;
+}
+section:nth-of-type(4) .d-flex:nth-of-type(2) img {
+  border-radius: 50%;
+  width: 80%;
 }
 
 /*# sourceMappingURL=app.css.map */
