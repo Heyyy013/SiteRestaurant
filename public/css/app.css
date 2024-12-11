@@ -12165,12 +12165,6 @@ section:nth-of-type(10) .rs {
   border-radius: 50%;
 }
 
-.ligne {
-  width: 100%;
-  height: 1px;
-  background: grey;
-}
-
 footer {
   background-color: #000000;
 }
