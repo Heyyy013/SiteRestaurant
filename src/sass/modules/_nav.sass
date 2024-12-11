@@ -6,6 +6,9 @@ section:nth-of-type(1)
     height: 700px
     nav
         background-color: rgb(0, 0 , 0, 0.5 )
+        width: 100%
+        position: fixed
+        z-index: 5
         .top
             align-items: center
             width: 100%
@@ -13,10 +16,11 @@ section:nth-of-type(1)
             color: white
             &:hover
                 color: white
-        p
+        a
             color: white
             &:hover
                 color: $orange
+                text-decoration: none
         button
             color: white
             width: 40%
@@ -41,14 +45,14 @@ section:nth-of-type(1)
                 border-color: $orange
 .video-play-button 
     position: relative
-    z-index: 10
+    z-index: 4
     top: 300px
     margin-left: 500%
     box-sizing: content-box
     display: block
     width: 15px
     height: 12px
-    background: #b50201
+    background: $orange
     border-radius: 50%
     padding: 9px 24px 18px 28px
 
@@ -63,7 +67,7 @@ section:nth-of-type(1)
     display: block
     width: 75px
     height: 75px
-    background: #b50201
+    background: $orange
     border-radius: 50%
     animation: pulse-border 1500ms ease-out infinite
 
@@ -78,7 +82,7 @@ section:nth-of-type(1)
     display: block
     width: 70px
     height: 70px
-    background: #b50201
+    background: $orange
     border-radius: 50%
     transition: all 200ms
     border: solid 4px #fff

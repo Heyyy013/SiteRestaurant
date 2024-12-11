@@ -11854,6 +11854,9 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(1) nav {
   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 section:nth-of-type(1) nav .top {
   align-items: center;
@@ -11865,11 +11868,12 @@ section:nth-of-type(1) nav h3, section:nth-of-type(1) nav .h3 {
 section:nth-of-type(1) nav h3:hover, section:nth-of-type(1) nav .h3:hover {
   color: white;
 }
-section:nth-of-type(1) nav p {
+section:nth-of-type(1) nav a {
   color: white;
 }
-section:nth-of-type(1) nav p:hover {
+section:nth-of-type(1) nav a:hover {
   color: #CDA45D;
+  text-decoration: none;
 }
 section:nth-of-type(1) nav button {
   color: white;
@@ -11901,14 +11905,14 @@ section:nth-of-type(1) .welcome button:hover {
 
 .video-play-button {
   position: relative;
-  z-index: 10;
+  z-index: 4;
   top: 300px;
   margin-left: 500%;
   box-sizing: content-box;
   display: block;
   width: 15px;
   height: 12px;
-  background: #b50201;
+  background: #CDA45D;
   border-radius: 50%;
   padding: 9px 24px 18px 28px;
 }
@@ -11923,7 +11927,7 @@ section:nth-of-type(1) .welcome button:hover {
   display: block;
   width: 75px;
   height: 75px;
-  background: #b50201;
+  background: #CDA45D;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -11938,7 +11942,7 @@ section:nth-of-type(1) .welcome button:hover {
   display: block;
   width: 70px;
   height: 70px;
-  background: #b50201;
+  background: #CDA45D;
   border-radius: 50%;
   transition: all 200ms;
   border: solid 4px #fff;
