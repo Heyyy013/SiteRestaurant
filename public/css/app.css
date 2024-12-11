@@ -12066,20 +12066,27 @@ section:nth-of-type(4) {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+section:nth-of-type(4) ul {
+  margin-left: 5%;
+}
+section:nth-of-type(4) ul li:hover {
+  color: #CDA45D;
+  cursor: pointer;
+}
 section:nth-of-type(4) h1, section:nth-of-type(4) .h1 {
   color: #CDA45D;
 }
-section:nth-of-type(4) .d-flex:nth-of-type(2) {
+section:nth-of-type(4) .d-flex {
   width: 80%;
   padding-top: 50px;
 }
-section:nth-of-type(4) .d-flex:nth-of-type(2) div {
+section:nth-of-type(4) .d-flex div {
   background-color: #1A1814;
   color: white;
 }
-section:nth-of-type(4) .d-flex:nth-of-type(2) img {
+section:nth-of-type(4) .d-flex img {
   border-radius: 50%;
-  width: 80%;
+  width: 100%;
 }
 
 section:nth-of-type(5) {
