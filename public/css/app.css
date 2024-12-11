@@ -12125,4 +12125,54 @@ section:nth-of-type(9) button:hover {
   background-color: #CDA45D;
 }
 
+section:nth-of-type(10) {
+  background-color: #0D0B09;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 100%;
+}
+section:nth-of-type(10) button {
+  margin-top: 20px;
+  color: white;
+  border-color: #CDA45D;
+  width: 150px;
+  background-color: #CDA45D;
+  z-index: 1;
+}
+section:nth-of-type(10) button:hover {
+  color: white;
+  background-color: #CDA45D;
+}
+section:nth-of-type(10) .d-flex {
+  justify-content: space-evenly;
+}
+section:nth-of-type(10) input {
+  position: relative;
+  width: 100%;
+  left: 30px;
+  top: 20px;
+  height: 36px;
+  background-color: #27251F;
+  border: 1px solid grey;
+}
+section:nth-of-type(10) .bi-chevron-right {
+  color: #CDA45D;
+}
+section:nth-of-type(10) .rs {
+  border: 10px solid #27251F;
+  background-color: #27251F;
+  border-radius: 50%;
+}
+
+.ligne {
+  width: 100%;
+  height: 1px;
+  background: grey;
+}
+
+footer {
+  background-color: #000000;
+}
+
 /*# sourceMappingURL=app.css.map */
