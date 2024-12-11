@@ -11980,12 +11980,37 @@ section:nth-of-type(2) {
 section:nth-of-type(2) img {
   width: 75%;
 }
+section:nth-of-type(2) img:hover {
+  scale: 1.2;
+  transition: 1s;
+}
 section:nth-of-type(2) div {
   width: 40%;
   margin-top: 300px;
 }
 section:nth-of-type(2) i {
   color: #CDA45D;
+}
+
+.position-relative {
+  height: 50px;
+}
+
+.haut, .bas {
+  position: absolute;
+  z-index: 1;
+  height: 100px;
+  width: 10px;
+}
+
+.haut {
+  top: -550%;
+  left: 3%;
+}
+
+.bas {
+  top: -170%;
+  left: 32%;
 }
 
 section:nth-of-type(3) {
@@ -12055,6 +12080,13 @@ section:nth-of-type(5) .carousel {
   width: 80%;
   margin: auto;
 }
+section:nth-of-type(5) .puntos {
+  text-align: center;
+}
+section:nth-of-type(5) i:active {
+  background-color: #fff;
+  border-radius: 50%;
+}
 
 section:nth-of-type(6) {
   background-color: #0D0B09;
@@ -12112,8 +12144,17 @@ section:nth-of-type(7) .d-flex {
   width: 95%;
   margin: auto;
 }
-section:nth-of-type(7) .d-flex img {
+section:nth-of-type(7) .d-flex div {
+  overflow: hidden;
   width: 25%;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+}
+section:nth-of-type(7) .d-flex img {
+  width: 100%;
+}
+section:nth-of-type(7) .d-flex img:hover {
+  scale: 1.2;
 }
 
 section:nth-of-type(8) {
