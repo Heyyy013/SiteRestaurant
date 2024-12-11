@@ -11945,7 +11945,6 @@ section:nth-of-type(1) .welcome button:hover {
   background: #CDA45D;
   border-radius: 50%;
   transition: all 200ms;
-  border: solid 4px #fff;
 }
 
 .video-play-button span {
@@ -11991,7 +11990,27 @@ section:nth-of-type(2) div {
 section:nth-of-type(2) i {
   color: #CDA45D;
 }
+section:nth-of-type(2) .retour {
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  z-index: 5;
+  font-size: 200%;
+  color: #CDA45D;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border: 1px solid #CDA45D;
+  opacity: 0;
+  animation: toTop linear forwards;
+  animation-timeline: view();
+  animation-range-start: 90vh;
+}
 
+@keyframes toTop {
+  to {
+    opacity: 1;
+  }
+}
 .position-relative {
   height: 50px;
 }
@@ -12030,6 +12049,14 @@ section:nth-of-type(3) .d-flex div {
   background-color: #1A1814;
   width: 30%;
   padding: 30px;
+}
+section:nth-of-type(3) .d-flex div:hover {
+  background-color: #CDA45D;
+}
+section:nth-of-type(3) .d-flex div:hover h1, section:nth-of-type(3) .d-flex div:hover .h1, section:nth-of-type(3) .d-flex div:hover p {
+  transform: translateY(-20px);
+  color: white;
+  animation: alternate anim;
 }
 
 section:nth-of-type(4) {
@@ -12082,9 +12109,15 @@ section:nth-of-type(5) .carousel {
 }
 section:nth-of-type(5) .puntos {
   text-align: center;
+  padding-top: 20px;
 }
-section:nth-of-type(5) i:active {
-  background-color: #fff;
+section:nth-of-type(5) .puntos i {
+  margin-left: 5px;
+  background-color: grey;
+  border-radius: 50%;
+}
+section:nth-of-type(5) .puntos i:active {
+  background-color: #CDA45D;
   border-radius: 50%;
 }
 
