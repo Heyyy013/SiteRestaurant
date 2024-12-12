@@ -12153,17 +12153,13 @@ section:nth-of-type(5) .carousel {
 }
 section:nth-of-type(5) .puntos {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
-section:nth-of-type(5) .puntos i {
-  margin-left: 5px;
-  background-color: grey;
+section:nth-of-type(5) .puntos button {
   border-radius: 50%;
-  font-size: 150%;
-}
-section:nth-of-type(5) .puntos i:active {
-  background-color: #CDA45D;
-  border-radius: 50%;
+  margin-top: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 section:nth-of-type(6) {
