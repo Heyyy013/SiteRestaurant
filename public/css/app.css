@@ -11858,6 +11858,9 @@ section:nth-of-type(1) nav {
   position: fixed;
   z-index: 5;
 }
+section:nth-of-type(1) nav .active {
+  color: #CDA45D;
+}
 section:nth-of-type(1) nav .top {
   align-items: center;
   width: 100%;
@@ -11901,6 +11904,16 @@ section:nth-of-type(1) .welcome button {
 section:nth-of-type(1) .welcome button:hover {
   background-color: #CDA45D;
   border-color: #CDA45D;
+}
+
+iframe {
+  width: 100%;
+}
+
+.btnplay:hover span {
+  scale: 3;
+  transition: 0.5s;
+  width: 100%;
 }
 
 .video-play-button {
@@ -11979,10 +11992,6 @@ section:nth-of-type(2) {
 section:nth-of-type(2) img {
   width: 75%;
 }
-section:nth-of-type(2) img:hover {
-  scale: 1.2;
-  transition: 1s;
-}
 section:nth-of-type(2) div {
   width: 40%;
   margin-top: 300px;
@@ -12015,6 +12024,21 @@ section:nth-of-type(2) .retour {
   height: 50px;
 }
 
+.position-relative:hover .haut {
+  scale: 1.3;
+  transform: translateY(-20px);
+  transition: 1.5s;
+}
+.position-relative:hover .bas {
+  transform: translateY(20px);
+  transition: 1.5s;
+  scale: 1.3;
+}
+.position-relative:hover img {
+  scale: 1.2;
+  transition: 1s;
+}
+
 .haut, .bas {
   position: absolute;
   z-index: 1;
@@ -12025,11 +12049,15 @@ section:nth-of-type(2) .retour {
 .haut {
   top: -550%;
   left: 3%;
+  border-top: 5px solid #CDA45D;
+  border-left: 5px solid #CDA45D;
 }
 
 .bas {
   top: -170%;
   left: 32%;
+  border-bottom: 5px solid #CDA45D;
+  border-right: 5px solid #CDA45D;
 }
 
 section:nth-of-type(3) {
@@ -12066,6 +12094,12 @@ section:nth-of-type(4) {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+section:nth-of-type(4) span {
+  color: #CDA45D;
+}
+section:nth-of-type(4) .active {
+  color: #CDA45D;
+}
 section:nth-of-type(4) ul {
   margin-left: 5%;
 }
@@ -12086,11 +12120,15 @@ section:nth-of-type(4) .d-flex div {
 }
 section:nth-of-type(4) .d-flex img {
   border-radius: 50%;
-  width: 100%;
+  width: 80%;
+}
+section:nth-of-type(4) .nav p:hover {
+  color: #CDA45D;
+  cursor: pointer;
 }
 
 section:nth-of-type(5) {
-  background-image: url("../img/events-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("../img/events-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: overlay;
   color: white;
   background-size: 100%;
@@ -12122,6 +12160,7 @@ section:nth-of-type(5) .puntos i {
   margin-left: 5px;
   background-color: grey;
   border-radius: 50%;
+  font-size: 150%;
 }
 section:nth-of-type(5) .puntos i:active {
   background-color: #CDA45D;
@@ -12246,7 +12285,6 @@ section:nth-of-type(9) textarea {
   height: 150px;
   background-color: black;
   border: solid 1px #CDA45D;
-  color: #CDA45D;
   margin-top: 40px;
 }
 section:nth-of-type(9) input {
@@ -12254,7 +12292,6 @@ section:nth-of-type(9) input {
   height: 40px;
   background-color: black;
   border: solid 1px #CDA45D;
-  color: #CDA45D;
   margin-top: 40px;
 }
 section:nth-of-type(9) .d-flex {
@@ -12287,8 +12324,10 @@ section:nth-of-type(10) {
   width: 100%;
 }
 section:nth-of-type(10) button {
-  margin-top: 20px;
+  position: absolute;
   color: white;
+  top: 0;
+  right: 0;
   border-color: #CDA45D;
   width: 150px;
   background-color: #CDA45D;
@@ -12302,11 +12341,8 @@ section:nth-of-type(10) .d-flex {
   justify-content: space-evenly;
 }
 section:nth-of-type(10) input {
-  position: relative;
-  width: 100%;
-  left: 30px;
-  top: 20px;
   height: 36px;
+  width: 100%;
   background-color: #27251F;
   border: 1px solid grey;
 }
