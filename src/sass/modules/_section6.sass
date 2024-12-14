@@ -10,8 +10,10 @@ section:nth-of-type(6)
     .d-flex
         width: 80%
         margin: auto
+        margin-top: 40px
+        justify-content: space-between
         input
-            width: 25%
+            width: 30%
             height: 40px
             background-color: black
             border: solid 1px $orange
@@ -28,8 +30,34 @@ section:nth-of-type(6)
         margin-top: 20px
         color: white
         border-color: $orange
-        width: 12%
+        width: 150px
         background-color: $orange
         &:hover
             color: white
             background-color: $orange
+
+
+@media (min-width: 424px) and (max-width: 767px)
+    section:nth-of-type(6)
+        padding-left: 25px
+        padding-right: 25px
+        .d-flex
+            width: 100%
+            gap: 10px
+            input
+                width: 100%
+        textarea
+            width: 100%
+
+@media (min-width: 768px) and (max-width: 1023px)
+    section:nth-of-type(6)
+        padding-left: 25px
+        padding-right: 25px
+        .d-flex
+            width: 90%
+            gap: 10px
+            justify-content: space-between
+            input
+                width: 45%
+        textarea
+            width: 90%

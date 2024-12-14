@@ -31,3 +31,40 @@ section:nth-of-type(10)
         border: 10px solid #27251F
         background-color: #27251F
         border-radius: 50%
+
+
+@media (min-width: 424px) and (max-width: 767px)
+    section:nth-of-type(10)
+        padding-left: 25px
+        .flex1
+            flex-direction: column
+            gap: 30px
+        .flex2
+            flex-direction: row
+            justify-content: start
+            gap: 10px
+
+        button
+            right: 20px
+
+        input
+            width: 90%
+@media (min-width: 768px) and (max-width: 1024px)
+    section:nth-of-type(10)
+        padding-left: 25px
+        .flex1
+            flex-wrap: wrap
+            gap: 30px
+            >div
+                width: 45%
+        .flex2
+            flex-direction: row
+            justify-content: start
+            gap: 10px
+
+        button
+            right: 10px
+
+        input
+            width: 100%
+            margin-right: 20px
