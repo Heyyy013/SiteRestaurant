@@ -11848,6 +11848,18 @@ textarea.form-control-lg {
 body {
   margin: 0;
 }
+body .titre {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body .titre .ligne {
+  width: 120px !important;
+  height: 1px;
+  background: white;
+  position: relative;
+  top: -5px;
+}
 
 section:nth-of-type(1) {
   background-image: url("../img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -12417,7 +12429,7 @@ section:nth-of-type(7) h1, section:nth-of-type(7) .h1 {
   color: #CDA45D;
 }
 section:nth-of-type(7) .d-flex {
-  width: 95%;
+  width: 98%;
   margin: auto;
 }
 section:nth-of-type(7) .d-flex div {
@@ -12496,7 +12508,7 @@ section:nth-of-type(9) h1, section:nth-of-type(9) .h1 {
   color: #CDA45D;
   padding-left: 75px;
 }
-section:nth-of-type(9) > p {
+section:nth-of-type(9) .titre p {
   padding-left: 75px;
 }
 section:nth-of-type(9) i {
@@ -12548,42 +12560,51 @@ section:nth-of-type(9) button:hover {
 }
 
 @media (min-width: 424px) and (max-width: 767px) {
-  section:nth-of-type(9) h1, section:nth-of-type(9) .h1, section:nth-of-type(9) p {
+  section:nth-of-type(9) h1, section:nth-of-type(9) .h1 {
     padding-left: 25px;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) {
+  section:nth-of-type(9) .titre p {
+    padding-left: 25px;
+  }
+  section:nth-of-type(9) .d-flex:nth-of-type(2) {
     flex-direction: column;
     width: 100%;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) .card {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) .card {
     padding-left: 25px;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) > div {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) > div {
     width: 100%;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) > div h5, section:nth-of-type(9) .d-flex:nth-of-type(1) > div .h5 {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) > div h5, section:nth-of-type(9) .d-flex:nth-of-type(2) > div .h5, section:nth-of-type(9) .d-flex:nth-of-type(2) > div p {
     padding-left: 25px;
   }
   section:nth-of-type(9) .input {
     padding-left: 25px;
     padding-right: 25px;
   }
+  section:nth-of-type(9) .flexInput {
+    gap: 10%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  section:nth-of-type(9) h1, section:nth-of-type(9) .h1, section:nth-of-type(9) p {
+  section:nth-of-type(9) h1, section:nth-of-type(9) .h1 {
     padding-left: 25px;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) {
+  section:nth-of-type(9) .titre p {
+    padding-left: 25px;
+  }
+  section:nth-of-type(9) .d-flex:nth-of-type(2) {
     flex-direction: column;
     width: 100%;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) .card {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) .card {
     padding-left: 25px;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) > div {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) > div {
     width: 100%;
   }
-  section:nth-of-type(9) .d-flex:nth-of-type(1) > div h5, section:nth-of-type(9) .d-flex:nth-of-type(1) > div .h5 {
+  section:nth-of-type(9) .d-flex:nth-of-type(2) > div h5, section:nth-of-type(9) .d-flex:nth-of-type(2) > div .h5, section:nth-of-type(9) .d-flex:nth-of-type(2) > div p {
     padding-left: 25px;
   }
   section:nth-of-type(9) .input {
