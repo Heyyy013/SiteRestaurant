@@ -11860,6 +11860,10 @@ body .titre .ligne {
   position: relative;
   top: -5px;
 }
+body h1, body .h1 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
 
 section:nth-of-type(1) {
   background-image: url("../img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
