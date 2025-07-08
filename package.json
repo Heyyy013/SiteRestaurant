@@ -1,6 +1,6 @@
 {
   "scripts": {
-"build": "npx sass src/sass/app.sass public/css/app.css"
+  "build": "./node_modules/.bin/sass src/sass/app.sass public/css/app.css"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
